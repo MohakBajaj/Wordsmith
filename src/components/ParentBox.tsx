@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import ToolBox from "./ToolBox";
 
 export default function ParentBox() {
   const PLACEHOLDER = `Write with Confidence. ✍️
@@ -196,6 +197,7 @@ Accessible & Powerful:
           </div>
         </div>
       </div>
+      <ToolBox text={text} setText={setText} />
     </div>
   );
 }
