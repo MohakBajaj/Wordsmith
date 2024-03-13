@@ -7,18 +7,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metaData: Metadata = {
   title: "Wordsmith ",
   description: "A Powerful Text Utility Application for your all Texty need!",
-  icons: ["https://wordsmith.bmohak.tech/logo.png"],
 
   openGraph: {
     type: "website",
     url: "https://wordsmith.bmohak.tech/",
-    title: "Wordsmith ",
+    title: "Wordsmith",
     description: "A Powerful Text Utility Application for your all Texty need!",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Wordsmith ",
+    title: "Wordsmith",
     description: "A Powerful Text Utility Application for your all Texty need!",
   },
 };
