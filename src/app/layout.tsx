@@ -4,7 +4,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metaData: Metadata = {
+export const metadata: Metadata = {
   title: "Wordsmith ",
   description: "A Powerful Text Utility Application for your all Texty need!",
 };
