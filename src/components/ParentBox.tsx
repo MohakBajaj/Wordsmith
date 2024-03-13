@@ -40,6 +40,8 @@ Accessible & Powerful:
   const [wordCount, setWordCount] = useState(0);
   const [lineCount, setLineCount] = useState(0);
   const [textSize, setTextSize] = useState(3);
+  const [time, setTime] = useState(0);
+  const [memory, setMemory] = useState(0);
 
   useEffect(() => {
     setLetterCount(text.length);
@@ -48,9 +50,13 @@ Accessible & Powerful:
       const matches = text.match(/(\w+)/g);
       setWordCount(matches ? matches.length : 0);
       setLineCount(text.split(/\r\n|\r|\n/).length);
+      setTime(Math.ceil(text.length / 200));
+      setMemory(Math.round((text.length * 0.001 + Number.EPSILON) * 100) / 100);
     } else {
       setWordCount(0);
       setLineCount(0);
+      setTime(0);
+      setMemory(0);
     }
   }, [text]);
 
@@ -137,6 +143,8 @@ Accessible & Powerful:
             <p className="mt-4">{letterCount} characters</p>
             <p className="mt-4">{wordCount} words</p>
             <p className="mt-4">{lineCount} lines</p>
+            <p className="mt-4">{time} minutes</p>
+            <p className="mt-4">{memory} Kb</p>
           </div>
           <p className="flex-row flex text-3xl font-normal mt-9 select-none">
             <svg
