@@ -220,19 +220,19 @@ function magicSpell() {
       .replaceAll(" LINKING ", " BRIDGING THE GAP ")
       .replaceAll(
         " in conclusion ",
-        " to sum up everything that has been stated "
+        " to sum up everything that has been stated ",
       )
       .replaceAll(
         " In conclusion ",
-        " To sum up everything that has been stated "
+        " To sum up everything that has been stated ",
       )
       .replaceAll(
         " In Conclusion ",
-        " To sum up everything that has been stated "
+        " To sum up everything that has been stated ",
       )
       .replaceAll(
         " IN CONCLUSION ",
-        " TO SUM UP EVERYTHING THAT HAS BEEN STATED "
+        " TO SUM UP EVERYTHING THAT HAS BEEN STATED ",
       )
       .replaceAll(" also ", " in addition to this ")
       .replaceAll(" Also ", " In addition to this ")
@@ -251,29 +251,29 @@ function magicSpell() {
       .replaceAll(" UNTIL ", " UNTIL SUCH TIME AS ")
       .replaceAll(
         " this suggest ",
-        " therefore elucidating the impression that "
+        " therefore elucidating the impression that ",
       )
       .replaceAll(
         " this suggests ",
-        " therefore elucidating the impression that "
+        " therefore elucidating the impression that ",
       )
       .replaceAll(
         " This suggests ",
-        " therefore elucidating the impression that "
+        " therefore elucidating the impression that ",
       )
       .replaceAll(
         " THIS SUGGESTS ",
-        " THEREFORE ELUCIDATING THE IMPRESSION THAT "
+        " THEREFORE ELUCIDATING THE IMPRESSION THAT ",
       )
       .replaceAll(" this means ", " this actively demonstrates that ")
       .replaceAll(" it means ", " it actively demonstrates that ")
       .replaceAll(
         " in conclusion to ",
-        " to sum up everything that has been stated so far "
+        " to sum up everything that has been stated so far ",
       )
       .replaceAll(
         " In conclusion to ",
-        " To sum up everything that has been stated so far "
+        " To sum up everything that has been stated so far ",
       )
       .replaceAll(" for ", " for the exact purpose of ")
       .replaceAll(" For ", " For the exact purpose of ");
@@ -282,7 +282,7 @@ function magicSpell() {
       alert(
         "Magic Spell [BETA] applied, " +
           (finalCount - earlyCount) +
-          " Characters added, Use it only 1 time per article"
+          " Characters added, Use it only 1 time per article",
       );
     } else {
       alert("Unable to apply Magic Spell, Add more suitable content");

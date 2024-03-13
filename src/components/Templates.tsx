@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export default function Templates({
@@ -132,6 +131,5 @@ Sincerely,
         </p>
       </div>
     </div>
-);
+  );
 }
-
