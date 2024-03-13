@@ -1,3 +1,6 @@
+import { useState } from "react";
+import Templates from "./Templates";
+
 export default function ToolBox({
   text,
   setText,
@@ -5,6 +8,7 @@ export default function ToolBox({
   text: string;
   setText: (text: string) => void;
 }) {
+  const [isTemplateVisible, setIsTemplateVisible] = useState(false);
   function lowerCase() {
     setText(text.toLowerCase());
   }
@@ -139,6 +143,33 @@ export default function ToolBox({
           <p>❌</p>
           Clear Text
         </div>
+        {/* Templates */}
+        <div
+          className="inline-flex flex-col justify-center items-center ml-2 w-24 cursor-pointer h-max"
+          onClick={() => setIsTemplateVisible(!isTemplateVisible)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+            />
+          </svg>
+          Templates
+        </div>
+        {isTemplateVisible && (
+          <Templates
+            setText={setText}
+            onClose={() => setIsTemplateVisible(false)}
+          />
+        )}
         <a
           className="inline-flex flex-col justify-center items-center ml-2 w-24 cursor-pointer"
           href="https://github.com/MohakBajaj/Wordsmith.git"
@@ -165,7 +196,6 @@ function magicSpell() {
   const textarea = document.getElementById("textarea") as HTMLTextAreaElement;
   let earlyCount = textarea ? textarea.value.length : 0;
   if (textarea) {
-    const earlyCount = textarea.value.length;
     textarea.value = textarea.value
       .replaceAll(" good ", " outstanding ")
       .replaceAll(" Good ", " Outstanding ")
