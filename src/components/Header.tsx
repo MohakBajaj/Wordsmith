@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 
 export default function Header() {
@@ -59,11 +60,9 @@ export default function Header() {
     localStorage.setItem("favTheme", "green");
   }
   return (
-    <div>
-      <div className="flex flex-row">
-        <p className="text-4xl select-none">Wordsmith 📝</p>
-      </div>
-      <div className="absolute right-4 flex flex-row pt-2 md:pt-0">
+    <div className="flex justify-between items-center">
+      <p className="text-4xl select-none">Wordsmith 📝</p>
+      <div className="flex flex-row pt-2 md:pt-0">
         <div
           className="w-4 h-4 m-1 rounded-full cursor-pointer active:scale-90  bg-fuchsia-400"
           onClick={fuchsia}
