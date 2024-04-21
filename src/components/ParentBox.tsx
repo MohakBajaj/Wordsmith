@@ -10,16 +10,16 @@ Welcome to Wordsmith!
 Analyze:
 
 *  Get detailed statistics like letter count, word count, line count, read time, and memory size.
-*  Identify areas for improvement with advanced text analysis features (available soon!).
+*  Identify areas for improvement with advanced text analysis features.
 
 Craft:
 
 *  Customize the writing experience with adjustable text size and a variety of themes.
-*  Leverage powerful tools to refine your writing (available soon!).
+*  Leverage powerful tools to refine your writing.
 
 Enhance: ✨
 
-*  Unlock the potential of "Magic Spell" (beta) to add relevant content and expand your text (coming soon!).
+*  Unlock the potential of "Magic Spell" (beta) to add relevant content and expand your text.
 
 Never Lose Work:*
 
